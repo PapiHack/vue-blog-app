@@ -1,4 +1,8 @@
-# blog-app
+# blog-app  
+
+This is a simple blog app built with vue. I'm discovering this amazing framework !  
+
+#### by @the_it_dev
 
 ## Project setup
 ```
