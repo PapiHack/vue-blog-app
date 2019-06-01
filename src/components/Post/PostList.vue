@@ -13,15 +13,16 @@
 
 <script>
 import PostListItem from './PostListItem'
+import Post from './Models/Post'
 
     export default {
         data(){
             return {
                 posts: [
-                    { id: 1, title: 'First Post', content: 'Ceci est le premier post.', author: 'Papi', date: new Date().toLocaleDateString() },
-                    { id: 2, title: 'Second Post', content: 'Ceci est le second post.', author: 'PapiHack', date: new Date().toLocaleDateString() },
-                    { id: 3, title: 'Third Post', content: 'Ceci est le troisième post.', author: 'itdev', date: new Date().toLocaleDateString() },
-                    { id: 4, title: 'Fourth Post', content: 'Ceci est le quatrième post.', author: 'SkullFace', date: new Date().toLocaleDateString() },
+                    new Post(1, 'First Post', 'Ceci est le premier post.', 'Papi', new Date().toLocaleDateString()),
+                    new Post(2, 'Second Post', 'Ceci est le second post.', 'PapiHack', new Date().toLocaleDateString()),
+                    new Post(3, 'Third Post', 'Ceci est le troisième post.', 'itdev', new Date().toLocaleDateString()),
+                    new Post(4, 'Fourth Post', 'Ceci est le quatrième post.', 'SkullFace', new Date().toLocaleDateString()),
                 ]
             }
         },
